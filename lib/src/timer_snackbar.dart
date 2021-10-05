@@ -81,7 +81,7 @@ timerSnackbar({
                 const SizedBox(width: 4.0),
                 Icon(
                   iconData,
-                  size: 16.0,
+                  size: 18.0,
                   color: Colors.blue[100],
                 ),
                 const SizedBox(width: 8.0),
