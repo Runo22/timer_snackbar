@@ -22,6 +22,9 @@ timerSnackbar({
 
   /// default TextStyle is none.
   TextStyle? contentTextStyle,
+
+  /// default buttonText is 'Undo'
+  String buttonText = 'Undo',
 }) {
   bool isExecute = true;
   final snackbar = SnackBar(
@@ -85,7 +88,7 @@ timerSnackbar({
                 ),
                 const SizedBox(width: 8.0),
                 Text(
-                  "Undo",
+                  buttonText,
                   style: TextStyle(color: Colors.blue[100]),
                   textScaleFactor: 1.1,
                 ),
