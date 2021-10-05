@@ -8,8 +8,8 @@ timerSnackbar({
   /// Main body message
   required String contentText,
 
-  /// action button icon path
-  required String iconPath,
+  /// default action button icon is undo_rounded
+  IconData iconData = Icons.undo_rounded,
 
   /// This method will execute after time finish. The default time is 4 seconds.
   required void Function() afterTimeExecute,
@@ -79,11 +79,9 @@ timerSnackbar({
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 const SizedBox(width: 4.0),
-                Image.asset(
-                  iconPath,
-                  width: 17.0,
-                  height: 15.0,
-                  alignment: Alignment.topCenter,
+                Icon(
+                  iconData,
+                  size: 16.0,
                   color: Colors.blue[100],
                 ),
                 const SizedBox(width: 8.0),
